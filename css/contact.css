@@ -74,6 +74,10 @@ header:hover {
     font-family: "Bahiana", sans-serif; 
 }
 
+#questions{
+    font-size: 60px;
+
+}
 .input-box {
     width: 100%;
     height: 50px;
