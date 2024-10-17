@@ -1,24 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <link rel="stylesheet" href="/css/contact.css">
 
-    <title>Snow Trails travel agency</title>
-
-
+    <!-- linking fonts from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bahiana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bahiana&family=Moirai+One&display=swap" rel="stylesheet">
+    
+    <title>Contact</title>
 </head>
 <body>
-    <h1>Snow Trails travel agency</h1>
-    <p1>Lucas Snow <br> snowtravels@gmail.com <br>+3537123189649 <br> Ice peak, snow street 34</p1>
-    
+  <!-- Create multiple div elements with a snowflake class -->
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  
+  <header>Snow Trails travel agency</header>
+
+  <main class="top_line"> <!-- class for the line with the buttons -->
     <div class="lucas-image">
-        <div class="lucas-text">
-          <h1>I am Lucas Snow </h1>
-          <h3>snowtravels@gmail.com</h3>
-          <button>Contact me</button>
-        </div>
+      <div class="lucas-text">
+          <h1 id="ImLucasSnow">I am <s>BLIND </s>Lucas Snow.</h1>
+          <div class="description-box">
+              <h2>Lucas Snow <br> snowtravels@gmail.com <br> +3537123189649 <br> Ice peak, snow street 34</h2>
+              <div class="wrapper">
+                <form action="">
+                  <h1>Any Other Questions? Get in touch!</h1>
+                  <div class="input-box">
+                    <input type="text" placeholder="Full Name" required>
+                  </div>
+                  <div class="input-box">
+                    <input type="text" placeholder="Email Address" required>
+                  </div>
+                  <textarea class="textbox" name="textbox"></textarea>
+                  <div></div>
+                  <button type="submit" class="btn">Submit</button>
+                </form>
+              </div>
+              <h1>Or Email us at:</h1>
+              <h2>snowtravels@gmail.com</h2>
+              <div class="button-container"> <!-- New container for buttons -->
+                  <a href="/index.html" class="button">Home</a>
+                  <a href="/pages/about.html" class="button">About Me</a>
+              </div>
+          </div>
       </div>
+  </div>
+  </main>
+
 </body>
 </html>
 
