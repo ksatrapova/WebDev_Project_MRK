@@ -1,4 +1,250 @@
-h1 {
+body {
+    background: #c3ccd8;
+}
+
+header {
+    background-color: #5d86b6;
+    padding: 19px;
+    font-size: 80px;
+    font-family: "Bahiana", sans-serif;
     text-align: center;
-    color: #02152b;
+    color: #feffff;
+    text-decoration-line: underline;
+}
+
+header:hover {
+    background-color: #375c7b;
+    transition: all 0.3s ease;
+}
+
+.button-container {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+.button {
+    background-color: #4a5d7a;
+    border: 2px solid #ffffff;
+    border-radius: 60px;
+    box-shadow: #4a5d7a 4px 4px 0 0;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 20px;
+    line-height: 40px;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+.button:hover {
+    background-color: #3a4d6a;
+    box-shadow: #3a4d6a 6px 6px 0 0;
+
+}
+
+
+
+#ImLucasSnow {
+    font-size: 65px;
+    color: #feffff;
+    background-color: #5d86b6; 
+    padding: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Bahiana", sans-serif;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px; 
+}
+
+
+.description-box {
+    text-align: center;
+    background-color: #5d86b6; 
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 0; /* Remove margin */
+    width: calc(100% - 40px); /* Use calc to keep some space */
+    /* Adjust this value if you want it closer to edges */
+    font-family: "Bahiana", sans-serif; 
+}
+
+#questions{
+    font-size: 60px;
+
+}
+.input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 75%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    color: #fff;
+    padding: 1px 20px 2px ;
+}
+
+.input-box input::placeholder {
+    color: #ffffff
+}
+
+.textbox {
+    width: 100%;
+    height: 75px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #000000;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background:#fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #b7b4b4;
+    
+}
+
+.footer {
+    background-color: #02152b;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1rem;
+  }
+  
+  .footer a {
+    color: #5d86b6;
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+  
+    .hero p {
+        font-size: 1.2rem;
+    }
+  
+    .section h2 {
+        font-size: 2rem;
+    }
+  
+    .section p {
+        font-size: 1rem;
+    }
+  }
+  
+
+.snowflake {
+    position: fixed;
+    top: -10px; 
+    font-size: 24px; 
+    color: rgb(243, 237, 237); 
+    animation-name: fall, drift;
+    animation-duration: 10s, 4s; 
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-delay: 0s, 0s;
+}
+
+@keyframes fall {
+    0% {
+        top: -10%;
+        opacity: 1;
+    }
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes drift {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+}
+
+.snowflake:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s, 1s;
+    font-size: 16px;
+}
+.snowflake:nth-child(2) {
+    left: 20%;
+    animation-delay: 2s, 0.5s;
+    font-size: 20px;
+}
+.snowflake:nth-child(3) {
+    left: 30%;
+    animation-delay: 4s, 2s;
+    font-size: 24px;
+}
+.snowflake:nth-child(4) {
+    left: 40%;
+    animation-delay: 6s, 1.5s;
+    font-size: 18px;
+}
+.snowflake:nth-child(5) {
+    left: 50%;
+    animation-delay: 1s, 3s;
+    font-size: 22px;
+}
+.snowflake:nth-child(6) {
+    left: 60%;
+    animation-delay: 3s, 1s;
+    font-size: 16px;
+}
+.snowflake:nth-child(7) {
+    left: 70%;
+    animation-delay: 5s, 0.2s;
+    font-size: 26px;
+}
+.snowflake:nth-child(8) {
+    left: 80%;
+    animation-delay: 2s, 2s;
+    font-size: 28px;
+}
+.snowflake:nth-child(9) {
+    left: 90%;
+    animation-delay: 3.5s, 1.7s;
+    font-size: 20px;
+}
+.snowflake:nth-child(10) {
+    left: 95%;
+    animation-delay: 0s, 1s;
+    font-size: 24px;
 }
