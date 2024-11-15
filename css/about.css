@@ -1,13 +1,14 @@
 .button {
-  background-color: #4a5d7a;
+  color: #ffffff; 
+  background-color: #3a4d6a; 
   border: 2px solid #ffffff;
   border-radius: 60px;
   box-shadow: #4a5d7a 4px 4px 0 0;
-  color: rgb(255, 255, 255);
   cursor: pointer;
   display: inline-block;
-  font-size: 15px;
-  padding: 10px 15px; /* Add horizontal padding for better button size */
+  padding: 12px 20px; 
+  margin: 10px; 
+  font-size: 16px;
   line-height: 40px;
   transition: all 0.3s ease;
 }
@@ -180,12 +181,12 @@ img:hover{
   color: rgb(255, 255, 255);
   cursor: pointer;
   display: inline-block;
-  font-size: 15px;
-  padding:  10px;
+  padding: 12px 20px; 
+  margin: 10px; 
+  font-size: 16px;
   line-height: 40px;
   text-align: center;
   transition: all 0.3s ease;
-  margin: 10px;
   
 }
 .contact-button:hover {
@@ -196,8 +197,8 @@ img:hover{
 
 /* Footer styles */
 .footer {
-  background-color: #02152b;
-  color: #fff;
+  color: #ffffff; 
+  background-color: #3a4d6a; 
   text-align: center;
   padding: 2rem 0;
   font-size: 1rem;
