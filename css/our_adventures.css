@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #02152b;
+}
+
+h1, h2 {
+    font-family: 'Bahiana', sans-serif;
+    color: #2b4a70;
+}
+
+.header {
+    text-align: center;
+    background: linear-gradient(to bottom, #5d86b6, #b9dddf);
+    padding: 20px;
+}
+
+.header p {
+    color: #1b1919;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.header-buttons .button {
+    background-color: #003366; 
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 60px;
+    box-shadow: #4a5d7a 4px 4px 0 0;
+    cursor: pointer;
+    display: inline-block;
+    padding: 12px 24px; 
+    margin: 10px; 
+    font-size: 16px;
+    line-height: 40px;
+    transition: all 0.3s ease;
+}
+
+.header-buttons .button:hover {
+    background-color: #3a4d6a;
+}
+
+.adventures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f0f4f8;
+}
+
+.adventure-item {
+    background-color: #ffffff;
+    border: 2px solid #3a4d6a;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.adventure-item:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #02152b;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer a {
+    color: #5d86b6;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Pricing Table Section */
+.pricing-table {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.pricing-table h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #003a63; /* Lucas Snow dark blue */
+}
+
+/* Plans Container */
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+/* Individual Plan */
+.plan {
+    background: white;
+    border: 2px solid #bcd0e6; /* Light blue border */
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+    border-color: #004aad; /* Lucas Snow primary blue */
+}
+
+.plan h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #004aad; /* Primary blue */
+}
+
+.price {
+    font-size: 2rem;
+    color: #003a63; /* Dark blue */
+    margin: 1rem 0;
+}
+
+/* Features List */
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    color: #333;
+}
+
+.plan ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e6edf4; /* Subtle divider */
+}
+
+.plan ul li:last-child {
+    border-bottom: none;
+}
+
+/* Button */
+.plan button {
+    background-color: #004aad; /* Primary blue */
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.plan button:hover {
+    background-color: #00337d; /* Darker blue for hover */
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .adventures {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .adventures {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1024px) {
+    .adventures {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}

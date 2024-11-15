@@ -215,20 +215,45 @@ img:hover{
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+/* Mobile Devices (width < 600px) */
+@media (max-width: 600px) {
+  #pfp {
+      width: 100px; /* Smaller profile image */
+  }
   .hero h1 {
-      font-size: 5.0rem;
+      font-size: 2.5rem; /* Smaller title font */
   }
-
   .hero p {
-      font-size: 1.3rem;
+      font-size: 1rem; /* Smaller subtitle */
   }
-
-  .section h1 {
-      font-size: 3rem;
+  .about-section p {
+      font-size: 1rem; /* Adjust content font */
   }
-
-  .section p {
-      font-size: 1.3rem;
+  .hero-buttons .button {
+      padding: 8px 15px; /* Smaller button padding */
   }
 }
+
+/* Tablets (width between 600px and 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  #pfp {
+      width: 120px; 
+  }
+  .hero h1 {
+      font-size: 3rem;
+  }
+  .hero p {
+      font-size: 1.2rem;
+  }
+  .about-section p {
+      font-size: 1.1rem; 
+  }
+}
+
+/* Desktop Screens (width > 1024px) */
+@media (min-width: 1024px) {
+  .content {
+      padding: 40px; 
+  }
+}
+
