@@ -1,12 +1,12 @@
 .button {
-  color: #ffffff; 
-  background-color: #3a4d6a; 
+  background-color: #003366; 
+    color: #ffffff;
   border: 2px solid #ffffff;
   border-radius: 60px;
   box-shadow: #4a5d7a 4px 4px 0 0;
   cursor: pointer;
   display: inline-block;
-  padding: 12px 20px; 
+  padding: 12px 24px; 
   margin: 10px; 
   font-size: 16px;
   line-height: 40px;
@@ -46,6 +46,7 @@ img:hover{
 /* Buttons container */
 .hero-buttons {
   margin-top: 20px; 
+  margin-right: 15px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -174,14 +175,14 @@ img:hover{
 }
 
 .contact-button {
-  background-color: #4a5d7a;
+  background-color: #003366; 
   border: 2px solid #ffffff;
   border-radius: 60px;
   box-shadow: #4a5d7a 4px 4px 0 0;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  padding: 12px 20px; 
+  padding: 12px 24px; 
   margin: 10px; 
   font-size: 16px;
   line-height: 40px;
@@ -205,7 +206,7 @@ img:hover{
 }
 
 .footer a {
-  color: #5d86b6; /* Light blue links in footer */
+  color: #cce7ff; 
   text-decoration: none;
   margin: 0 1rem;
 }
