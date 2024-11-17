@@ -1,15 +1,46 @@
+/* Reset and box-sizing for consistency */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+/* Base body styling */
+body {
+  background-color: #639cc5;
+  font-family: "Quicksand", sans-serif;
+  padding: 10px;
+  text-align: center;
+}
 
+/* Header section */
+.header {
+  background-color: #639cc5;
+  padding: 20px;
+  font-family: "Bahiana", sans-serif;
+  font-size: 45px;
+  text-align: center;
+  transition: background-color 0.5s ease;
+}
+
+h1 {
+  color: #ffffff;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 6px;
+}
+
+/* Button styling  */
 .button {
-  background-color: #4a5d7a  ;
+  background-color: #4a5d7a;
   border: 2px solid #ffffff;
   border-radius: 50px;
   box-shadow: #4a5d7a 4px 4px 0 0;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
   font-size: 40px;
-  padding:  10px;
+  padding: 10px;
   line-height: 40px;
   text-align: center;
   transition: all 0.3s ease;
@@ -18,61 +49,120 @@
 }
 
 .button:hover {
-  background-color: #3a4d6a; 
-  box-shadow: #3a4d6a 6px 6px 0 0; 
+  background-color: #3a4d6a;
+  box-shadow: #3a4d6a 6px 6px 0 0;
 }
-/*header text*/
+
+
+/* Header text */
 h1 {
-    color: #ffffff;
-    text-decoration-line: underline;
-    text-decoration-style: dotted;
-    text-decoration-thickness: 10px;
+  color: #ffffff;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 10px;
 }
-/*nadpisy - headings*/
-h2{
-  font-size: 20px;
-  
+
+h2 {
+  font-size: 30px;
 }
-/*cities for trips*/
-h3{
+
+/* Cities for trips */
+h3 {
   font-size: 15px;
   color: #3a4d6a;
   writing-mode: horizontal-tb;
-  text-emphasis: dot #80C4F3;
-  text-emphasis-position:  under right;
+  text-emphasis: dot #639cc5;
+  text-emphasis-position: under right;
 }
 
-/* 
-p {
+/* Snowboarding Trip Signup Section Styling */
+.form.container {
+  background-color: #f5f5f5;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  width: 100%;
+  max-width: 500px; 
+  margin-left: auto;
+  margin-right: auto;
+}
 
-} 
-*/
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 16px;  
+  margin-top: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #4a5d7a;
+  border-radius: 8px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
 
-*{box-sizing: border-box;}
+.button_form {
+  background-color: #639cc5;
+  font-family: "Aldrich", sans-serif;
+  font-size: 18px;
+  padding: 14px 20px; 
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; 
+}
 
-.header {
-  background-color: #80C4F3;
-  padding: 5px;
-  text-align: center;
-  font-size: 50px;
+.button_form:hover {
+  background-color: #4a5d7a;
+  color: #ffffff;
+}
+
+/* Footer Styling */
+.footer {
+  color: #3a4d6a;
+  background-color: #639cc5;
+  padding: 50px;
+  font-size: 35px;
+  text-align: right;
   font-family: "Bahiana", sans-serif;
 }
 
-.header:hover{
+.footer:hover {
   background-color: #4a5d7a;
   transition: all 1s ease;
+  color: #ffffff;
 }
 
+/* Flexbox layout for rows and columns */
 .row {
-  display: -webkit-flex;
   display: flex;
   background-color: #ffffff;
 }
 
 .column {
   padding: 10px;
-  height: 600px; 
+  height: 600px;
   margin: 10px;
+}
+
+.column.side {
+  flex: 1;
+  color: #3a4d6a;
+  background-color: rgb(255, 255, 255);
+  border: 5px dotted #4a5d7a;
+  font-family: "Aldrich", sans-serif;
+  height: 830px;
+  font-size: 20px;
+}
+
+.column.middle {
+  flex: 2.5;
+  font-size: 20px;
+  color: #000000;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
 }
 
 img {
@@ -84,69 +174,81 @@ img {
   background-color: #4a5d7a;
 }
 
-img:hover{
-transition: all 0.5s ease;
+img:hover {
+  transition: all 0.5s ease;
 }
 
-.top_line{
-  background-color: #80C4F3;
-  text-align: center;
-  padding-bottom: 60px;
-  padding-top: 0px;
-}
-
-.column.side {
-   flex: 1;
-   color: #3a4d6a; 
-   background-color: rgb(255, 255, 255);
-   border: 5px dotted #4a5d7a;
-   font-family: "Aldrich", sans-serif;
-   height: 630px;
-}
-/*
-.column.side:hover{
-  border: 5px double #80C4F3;
-  transition: all 0.9s ease;
-}
-*/
-.column.middle {
-  flex: 2.5;
-  font-size: 17px;
-  color: #000000;
-  font-family: "Quicksand", sans-serif; 
-  font-weight: 600;
-
-}
-.form.container{
-  padding: 10px;
- }
- 
- .form.text{
-   text-align: left;
- }
- 
- .button_form{
-   background-color: #80C4F3;
-   font-family: "Aldrich", sans-serif;
-   font-size: 15px;
-   padding: 10px;
- }
-
-.footer {
-  color: #3a4d6a;
-  background-color: #80C4F3;
-  padding: 50px;
-  font-size: 30px;
-  text-align: right;
-  font-family: "Bahiana", sans-serif;
-}
-
-.footer:hover{
-  background-color: #4a5d7a;
-  transition: all 1s ease;
-  color: #ffffff;
+/* Adjustments for mobile responsiveness */
+@media (max-width: 768px) {
+  .header {
+    font-size: 35px;
   }
 
+  .button {
+    font-size: 24px;
+    padding: 8px 16px;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .form.container {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .button_form {
+    font-size: 16px;
+    padding: 12px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 28px;
+  }
+
+  .button {
+    font-size: 20px;
+    padding: 6px 10px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .form.container {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    padding: 12px;
+    font-size: 12px;
+  }
+
+  .button_form {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
 
 
 /*  
