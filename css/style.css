@@ -66,14 +66,6 @@ h2 {
   font-size: 30px;
 }
 
-/* Cities for trips */
-h3 {
-  font-size: 15px;
-  color: #3a4d6a;
-  writing-mode: horizontal-tb;
-  text-emphasis: dot #639cc5;
-  text-emphasis-position: under right;
-}
 
 /* Snowboarding Trip Signup Section Styling */
 .form.container {
