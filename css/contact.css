@@ -23,6 +23,72 @@ header:hover {
     margin-top: 20px; 
 }
 
+form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #375c7b;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #ededed;
+    margin: 12px 0;
+}
+
+.field.error .item {
+    border-color: #840000;
+}
+
+.field .item::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.field .errortxt {
+    font-size: 14.5px;
+    color: #840000;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+.field.error .errortxt {
+    display: block;
+}
+
+form .textarea-field .item {
+    resize: none;
+}
+
+form .textarea-field .errortxt {
+    margin-top: 5px;
+
+}
+
+form button {
+    padding: 12px 32px;
+    background: #02152b;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #031f3e;
+    font-size: 16px;
+    color: #feffff;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+form button:hover {
+    box-shadow: none;
+}
+
 .button {
     background-color: #4a5d7a;
     border: 2px solid #ffffff;
@@ -77,57 +143,6 @@ header:hover {
 #questions{
     font-size: 60px;
 
-}
-.input-box {
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
-}
-
-.input-box input {
-    width: 100%;
-    height: 75%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 40px;
-    color: #fff;
-    padding: 1px 20px 2px ;
-}
-
-.input-box input::placeholder {
-    color: #ffffff
-}
-
-.textbox {
-    width: 100%;
-    height: 75px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    color: #000000;
-}
-
-.btn {
-    width: 100%;
-    height: 45px;
-    background:#fff;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    cursor: pointer;
-    font-size: 18px;
-    color: #000000;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #b7b4b4;
-    height: 50px;
-    
 }
 
 .footer {
