@@ -1,27 +1,46 @@
-function checkInputs() {
-    const items = document.querySelectorAll(".item");
-  
-    for (const item of items) {
-      if (item.value === "") {
-        item.classList.add("error");
-        item.parentElement.classList.add("error");   
-  
-      }
-  
-      item.addEventListener("keyup", () => {
-        if (item.value !== "") {
-          item.classList.remove("error");
-          item.parentElement.classList.remove("error");
-        } else {
-          item.classList.add("error");
-          item.parentElement.classList.add("error");   
-  
-        }
-      });
-    }
-  }
+function validateForm() {
+  const fields = document.querySelectorAll(".field");
+  let isFormValid = true; 
 
-  form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  // sendEmail();
+  fields.forEach((field) => {
+    const input = field.querySelector(".item"); 
+    const errorText = field.querySelector(".errortxt"); 
+
+    //if input value is empty
+    if (!input.value.trim()) {
+      field.classList.add("error"); 
+      errorText.style.display = "block"; 
+      isFormValid = false; 
+    } else {
+      field.classList.remove("error"); 
+      errorText.style.display = "none"; 
+    }
+
+    //validation
+    input.addEventListener("keyup", () => {
+      if (input.value.trim()) {
+        field.classList.remove("error"); 
+        errorText.style.display = "none"; 
+      } else {
+        field.classList.add("error"); 
+        errorText.style.display = "block"; 
+      }
+    });
+  });
+
+  return isFormValid;
+}
+
+//form submission
+const form = document.querySelector("form"); // form element
+form.addEventListener("submit", (e) => {
+  const isFormValid = validateForm(); // form validation
+
+  if (!isFormValid) {
+    e.preventDefault(); // form didnt get filled out
+    alert("Please fill out all required fields.");
+  } else {
+    // refresh page
+    alert("Email has been sent!");
+  }
 });

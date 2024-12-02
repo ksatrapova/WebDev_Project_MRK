@@ -24,12 +24,11 @@ header:hover {
 }
 
 form .input-box {
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .field .item {
-    width: 100%;
+    width: 90%;
     padding: 18px;
     background: transparent;
     border: 2px solid #375c7b;
@@ -49,10 +48,10 @@ form .input-box {
 }
 
 .field .errortxt {
-    font-size: 14.5px;
+    font-size: 18.5px;
     color: #840000;
     text-align: left;
-    margin: -5px 0 10px;
+    margin: 5px 50px 10px;
     display: none;
 }
 
@@ -61,6 +60,8 @@ form .input-box {
 }
 
 form .textarea-field .item {
+    width: 90%;
+    height: 100px;
     resize: none;
 }
 

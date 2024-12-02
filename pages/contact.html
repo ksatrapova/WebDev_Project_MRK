@@ -43,20 +43,20 @@
                   <h1 id="questions">Any Other Questions? Get in touch!</h1>
                   <section class="contact">
                     <h2>Contact Me!</h2>
-                    <form action="#">
+                    <form onsubmit="return validateForm()" action="#">
                         <div class="input-box">
                             <div class="input-field field">
                                 <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
                                 <div class="errortxt">Full name can't be blank.</div>
                             </div>
                             <div class="input-field field">
-                                <input type="text" placeholder="Email Address" id="email" class="item" autocomplete="off">
+                                <input type="email" placeholder="Email Address" id="email" class="item" autocomplete="off">
                                 <div class="errortxt">Email address can't be blank.</div>
                             </div>
                         </div>
                         <div class="input-box">
                           <div class="input-field field">
-                              <input type="text" placeholder="Telephone Number" id="phone" class="item" autocomplete="off">
+                              <input type="tel" placeholder="Telephone Number" id="phone" class="item" autocomplete="off">
                               <div class="errortxt">Telephone number can't be blank.</div>
                           </div>
                           <div class="input-field field">
@@ -68,7 +68,7 @@
                         <textarea name="" id="message" placeholder="Your Message." class="item" autocomplete="off"></textarea>
                         <div class="errortxt">Text can't be blank.</div>
                       </div>
-                      <button type="submit">Send Message!</button>
+                      <button>Send Message!</button>
                     </form>
                 </section>
                 
